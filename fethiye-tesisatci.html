@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fethiye Su Tesisatçısı | 7/24 Acil Tesisat Hizmeti | Şimşek Tesisat</title>
+<meta name="description" content="Fethiye'nin güvenilir su tesisatçısı. Acil su arızası, kalorifer tamiri, banyo tadilatı. 7/24 hizmet. Hemen arayın!">
+<meta name="keywords" content="fethiye tesisatçı, fethiye su tesisatçısı, acil tesisat fethiye, musluk tamiri fethiye">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0e6b8a;
+    --blue: #0891b2;
+    --cyan: #0284c7;
+    --water: #e0f7fa;
+    --orange: #0ea5e9;
+    --white: #ffffff;
+    --gray: #f0f9ff;
+    --text: #0c4a6e;
+    --muted: #0369a1;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* FETHIYE WAVE BACKGROUND */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(6,182,212,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(14,107,138,0.06) 0%, transparent 55%),
+      radial-gradient(ellipse at 60% 80%, rgba(56,189,248,0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body > * { position: relative; z-index: 1; }
+  .wave-bg { z-index: 0 !important; }
+  .social-float { z-index: 999 !important; }
+
+  /* Animated SVG wave canvas behind sections */
+  .wave-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 0.6;
+  }
+
+  .wave-bg svg.mountain {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  .wave-bg svg.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 120px;
+  }
+
+  .wave-bg svg.wave:nth-child(2) {
+    bottom: 35%;
+    animation: waveMove 18s linear infinite;
+  }
+
+  .wave-bg svg.wave:nth-child(3) {
+    bottom: 20%;
+    opacity: 0.6;
+    animation: waveMove 26s linear infinite reverse;
+  }
+
+  .wave-bg svg.wave:nth-child(4) {
+    bottom: 5%;
+    opacity: 0.4;
+    animation: waveMove 34s linear infinite;
+  }
+
+  @keyframes waveMove {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* HEADER */
+  header {
+    background: #ffffff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(14,107,138,0.12);
+    border-bottom: 2px solid #e0f7fa;
+  }
+
+  .top-bar {
+    background: #0891b2;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+
+  .top-bar a { color: white; text-decoration: none; }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--cyan);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .logo-text {
+    line-height: 1.1;
+  }
+
+  .logo-text strong {
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    color: #0c4a6e;
+    letter-spacing: 1px;
+  }
+
+  .logo-text span {
+    font-size: 11px;
+    color: #0891b2;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: #0369a1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: #0891b2; }
+
+  .cta-call {
+    background: #0891b2;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+  }
+
+  .cta-call:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(8,145,178,0.4);
+  }
+
+  .cta-whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+  }
+
+  .cta-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+  }
+
+  .cta-instagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+  }
+
+  .cta-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(220,39,67,0.4);
+  }
+
+  /* Floating sosyal medya butonları */
+  .social-float {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+  }
+
+  .social-float a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .social-float a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .float-whatsapp { background: #25d366; }
+  .float-instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+  .float-phone { background: #0891b2; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 50%, #e0f2fe 100%);
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(8,145,178,0.12) 0%, transparent 70%);
+    top: -100px;
+    right: -100px;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(8,145,178,0.12);
+    border: 1px solid rgba(8,145,178,0.3);
+    color: #0369a1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--cyan);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 68px;
+    line-height: 1;
+    color: #0c4a6e;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span { color: #0891b2; }
+
+  .hero p {
+    color: #0369a1;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: #0891b2;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 15px rgba(8,145,178,0.35);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(8,145,178,0.5);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #0369a1;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid #7dd3fc;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: #0891b2;
+    color: #0891b2;
+    background: rgba(8,145,178,0.05);
+  }
+
+  /* Hero Card */
+  .hero-card {
+    background: #ffffff;
+    border: 2px solid #bae6fd;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(8,145,178,0.12);
+  }
+
+  .hero-card-title {
+    color: #0891b2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #0c4a6e;
+    font-size: 15px;
+    padding: 10px 14px;
+    background: #f0f9ff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: transform 0.2s;
+  }
+
+  .service-list li::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 12px;
+    background: conic-gradient(
+      from var(--angle, 0deg),
+      #bae6fd 0%,
+      #0891b2 25%,
+      #0369a1 50%,
+      #0891b2 75%,
+      #bae6fd 100%
+    );
+    z-index: -1;
+    animation: rotateBorder 3s linear infinite;
+  }
+
+  .service-list li::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #f0f9ff;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  .service-list li:hover {
+    transform: translateX(4px);
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotateBorder {
+    to { --angle: 360deg; }
+  }
+
+  .service-list li span { font-size: 20px; position: relative; z-index: 1; }
+  .service-list li * { position: relative; z-index: 1; }
+
+  /* STATS */
+  .stats-bar {
+    background: var(--blue);
+    padding: 24px 40px;
+  }
+
+  .stats-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stat-item { color: white; }
+  .stat-number {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .stat-label { font-size: 13px; color: #ffffff; font-weight: 700; margin-top: 4px; opacity: 1; }
+
+  /* SERVICES */
+  .section {
+    padding: 80px 40px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(1px);
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+  }
+
+  .section-tag {
+    display: inline-block;
+    background: var(--water);
+    color: var(--blue);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .section-header h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+
+  .section-header p {
+    color: var(--muted);
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .services-grid .service-card:last-child {
+    grid-column: auto;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue), var(--cyan));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .service-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(26,86,219,0.12);
+  }
+
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .card-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .card-price {
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #0891b2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .card-price:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+  }
+
+  .card-toggle {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #0891b2;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .card-detail {
+    display: none;
+    margin-top: 14px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 14px;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .service-card.open .card-detail { display: block; }
+  .service-card.open .card-toggle { color: #0369a1; }
+
+  .detail-section {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border-left: 3px solid #0891b2;
+  }
+
+  .detail-section.warning {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+  }
+
+  .detail-section.danger {
+    background: #fef2f2;
+    border-left-color: #ef4444;
+  }
+
+  .detail-section h4 {
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #0c4a6e;
+  }
+
+  .detail-section.warning h4 { color: #92400e; }
+  .detail-section.danger h4 { color: #991b1b; }
+
+  .detail-section p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .why-section {
+    background: linear-gradient(135deg, #0369a1 0%, #0891b2 100%);
+    padding: 80px 40px;
+  }
+
+  .why-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .why-text .section-tag {
+    background: rgba(255,255,255,0.15);
+    color: #e0f7fa;
+  }
+
+  .why-text h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .why-text p {
+    color: #bae6fd;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #e0f2fe;
+    font-size: 15px;
+  }
+
+  .check-icon {
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    color: #0891b2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    background: rgba(240,249,255,0.75);
+    backdrop-filter: blur(2px);
+  }
+
+  /* KAYAN YORUM ŞERİDİ */
+  .ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+  }
+  .ticker-wrap::before,
+  .ticker-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .ticker-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(240,249,255,1), transparent);
+  }
+  .ticker-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(240,249,255,1), transparent);
+  }
+  .ticker-track {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    animation: tickerScroll 80s linear infinite;
+  }
+  .ticker-track:hover { animation-play-state: paused; }
+  @keyframes tickerScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .ticker-item {
+    background: white;
+    border-radius: 14px;
+    padding: 16px 20px;
+    min-width: 160px;
+    max-width: 160px;
+    box-shadow: 0 2px 12px rgba(8,145,178,0.12);
+    border: 1px solid #e0f2fe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .ticker-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0891b2, #0369a1);
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+  }
+  .ticker-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0c4a6e;
+    text-align: center;
+  }
+  .ticker-stars {
+    color: #f59e0b;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  /* CTA BANNER */
+  .cta-banner {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-banner::before {
+    content: '💧';
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.05;
+    top: -30px;
+    right: 60px;
+    pointer-events: none;
+  }
+
+  .cta-banner h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 52px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .cta-banner p {
+    color: rgba(255,255,255,0.85);
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .phone-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    color: var(--navy);
+    padding: 18px 36px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+
+  .phone-big:hover { transform: scale(1.05); }
+
+  /* FOOTER */
+  footer {
+    background: #0c4a6e;
+    padding: 50px 40px 30px;
+    color: #7dd3fc;
+  }
+
+  .footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  footer h4 { color: #e0f7fa; font-size: 15px; margin-bottom: 16px; }
+  footer p { font-size: 14px; line-height: 1.7; }
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 8px; }
+  footer ul li a { color: #7dd3fc; text-decoration: none; font-size: 14px; }
+  footer ul li a:hover { color: #ffffff; }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* SEO CONTENT */
+  .seo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: rgba(255,255,255,0.7);
+  }
+
+  .seo-section h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .seo-section p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 768px) {
+    /* GRID'LER */
+    .hero-content, .services-grid, .why-grid, .reviews-grid, .footer-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* HERO */
+    .hero { padding: 40px 20px; min-height: auto; }
+    .hero h1 { font-size: 36px; }
+    .hero p { font-size: 15px; }
+    .hero-card { padding: 20px; }
+
+    /* STATS */
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-number { font-size: 32px; }
+
+    /* NAV */
+    nav { padding: 10px 16px; gap: 8px; flex-wrap: nowrap; }
+    .nav-links { display: none; }
+    .logo-text { font-size: 16px; }
+    .logo-sub { font-size: 10px; }
+
+    /* NAV BUTONLARI - mobilde küçük */
+    .cta-call { padding: 7px 10px; font-size: 11px; gap: 4px; }
+    .cta-whatsapp { padding: 7px 10px; font-size: 11px; gap: 4px; }
+    .cta-instagram { padding: 7px 10px; font-size: 11px; gap: 4px; }
+    .cta-instagram svg { width: 13px; height: 13px; }
+
+    /* SECTION */
+    .section { padding: 40px 16px; }
+    .section-header h2 { font-size: 24px; }
+
+    /* SERVICE CARDS - mobilde tam genişlik */
+    .services-grid { grid-template-columns: 1fr; gap: 16px; }
+    .service-card { padding: 20px; }
+
+    /* NEDEN BIZ */
+    .why-grid { grid-template-columns: 1fr; gap: 16px; }
+    .why-card { padding: 20px; }
+
+    /* USTA KARTI */
+    .master-card { padding: 24px 16px; }
+
+    /* YORUMLAR */
+    .reviews-grid { grid-template-columns: 1fr; }
+
+    /* CTA BANNER */
+    .cta-banner { padding: 40px 20px; }
+    .cta-banner h2 { font-size: 26px; }
+    .btn-primary { font-size: 15px; padding: 14px 24px; }
+
+    /* FLOATING BUTONLAR - mobilde biraz küçük */
+    .social-float { right: 12px; bottom: 20px; gap: 10px; }
+    .social-float a { width: 46px; height: 46px; font-size: 22px; }
+
+    /* FOOTER */
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    footer { padding: 40px 20px 20px; }
+
+    /* TOP BAR */
+    .top-bar { font-size: 11px; padding: 6px 12px; text-align: center; }
+
+    /* MARIO BANNER */
+    .mario-banner { height: 130px; }
+    #marioCanvas { height: 130px; }
+  }
+
+  /* Küçük telefonlar için ek kurallar */
+  @media (max-width: 400px) {
+    .cta-call span, .cta-whatsapp span { display: none; }
+    nav { gap: 6px; }
+    .hero h1 { font-size: 30px; }
+  }
+
+  /* MARIO BANNER */
+  .mario-banner {
+    background: #5c94fc;
+    overflow: hidden;
+    position: relative;
+    height: 180px;
+    image-rendering: pixelated;
+  }
+
+  #marioCanvas {
+    display: block;
+    width: 100%;
+    height: 180px;
+    image-rendering: pixelated;
+  }
+</style>
+</head>
+<body>
+
+<!-- FETHIYE WAVE & SILHOUETTE BACKGROUND -->
+<div class="wave-bg" aria-hidden="true">
+
+  <!-- Fethiye dağ & deniz silüeti - tüm arka plan -->
+  <svg class="mountain" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- Gökyüzü gradyanı -->
+    <defs>
+      <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#0891b2" stop-opacity="0.04"/>
+      </linearGradient>
+    </defs>
+    <rect width="1440" height="900" fill="url(#skyGrad)"/>
+
+    <!-- Arka dağlar (Babadağ silüeti) -->
+    <path fill="#0369a1" opacity="0.05"
+      d="M0,900 L0,420 Q80,380 160,320 Q240,260 320,280 Q400,300 460,240
+         Q520,180 580,160 Q640,140 700,180 Q760,220 820,190
+         Q880,160 940,120 Q1000,80 1060,110 Q1120,140 1180,100
+         Q1240,60 1300,90 Q1360,120 1440,80 L1440,900 Z"/>
+
+    <!-- Orta dağlar -->
+    <path fill="#0891b2" opacity="0.04"
+      d="M0,900 L0,550 Q100,510 200,470 Q300,430 380,460
+         Q460,490 540,440 Q620,390 700,410 Q780,430 860,390
+         Q940,350 1020,380 Q1100,410 1180,370
+         Q1260,330 1360,360 L1440,380 L1440,900 Z"/>
+
+    <!-- Fethiye körfezi su yüzeyi -->
+    <path fill="#0891b2" opacity="0.06"
+      d="M0,900 L0,720 Q180,700 360,720 Q540,740 720,710
+         Q900,680 1080,710 Q1260,740 1440,700 L1440,900 Z"/>
+
+    <!-- Tekneler -->
+    <g opacity="0.12" fill="#0369a1">
+      <!-- Tekne 1 -->
+      <ellipse cx="180" cy="730" rx="45" ry="9"/>
+      <rect x="205" y="710" width="4" height="22"/>
+      <polygon points="209,710 209,727 228,718"/>
+      <!-- Tekne 2 -->
+      <ellipse cx="620" cy="718" rx="38" ry="8"/>
+      <rect x="642" y="700" width="3" height="19"/>
+      <polygon points="645,700 645,715 661,707"/>
+      <!-- Tekne 3 -->
+      <ellipse cx="980" cy="725" rx="42" ry="8"/>
+      <rect x="1003" y="706" width="4" height="20"/>
+      <polygon points="1007,706 1007,722 1024,714"/>
+      <!-- Tekne 4 -->
+      <ellipse cx="1320" cy="715" rx="35" ry="7"/>
+      <rect x="1340" y="698" width="3" height="18"/>
+      <polygon points="1343,698 1343,712 1357,705"/>
+    </g>
+
+    <!-- Martılar -->
+    <g opacity="0.08" stroke="#0369a1" stroke-width="2" fill="none">
+      <path d="M200,180 Q210,170 220,180"/>
+      <path d="M210,190 Q220,182 230,190"/>
+      <path d="M600,250 Q612,240 624,250"/>
+      <path d="M900,150 Q914,138 928,150"/>
+      <path d="M1100,200 Q1112,190 1124,200"/>
+      <path d="M1300,280 Q1310,270 1320,280"/>
+    </g>
+  </svg>
+
+  <!-- Dalga 1 -->
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#0891b2" opacity="0.1"
+      d="M0,60 C180,20 360,100 540,60 C720,20 900,100 1080,60 C1260,20 1350,80 1440,60 L1440,120 L0,120 Z
+         M1440,60 C1620,20 1800,100 1980,60 C2160,20 2340,100 2520,60 C2700,20 2790,80 2880,60 L2880,120 L1440,120 Z"/>
+  </svg>
+
+  <!-- Dalga 2 -->
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#06b6d4" opacity="0.08"
+      d="M0,70 C200,30 400,100 600,65 C800,30 1000,90 1200,60 C1320,40 1400,80 1440,65 L1440,120 L0,120 Z
+         M1440,70 C1640,30 1840,100 2040,65 C2240,30 2440,90 2640,60 C2760,40 2840,80 2880,65 L2880,120 L1440,120 Z"/>
+  </svg>
+
+  <!-- Dalga 3 -->
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#38bdf8" opacity="0.07"
+      d="M0,40 C120,10 240,70 360,40 C480,10 600,65 720,40 C840,15 960,65 1080,40 C1200,15 1320,60 1440,40 L1440,80 L0,80 Z
+         M1440,40 C1560,10 1680,70 1800,40 C1920,10 2040,65 2160,40 C2280,15 2400,65 2520,40 C2640,15 2760,60 2880,40 L2880,80 L1440,80 Z"/>
+  </svg>
+
+</div>
+
+<!-- FLOATING SOSYAL MEDYA BUTONLARI -->
+<div class="social-float">
+  <a href="tel:+905412587137" class="float-phone" title="Ara">📞</a>
+  <a href="https://wa.me/905412587137?text=Merhaba,%20tesisat%20hizmeti%20almak%20istiyorum." target="_blank" class="float-whatsapp" title="WhatsApp">💬</a>
+  <a href="https://instagram.com/simsekyapivedekorasyon" target="_blank" class="float-instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white">
+  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg></a>
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  🚨 ACİL SU ARIZASI? 7/24 ANINDA HİZMET → <a href="tel:+905412587137">0541 258 71 37</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="#" class="logo">
+      <div class="logo-icon">💧</div>
+      <div class="logo-text">
+        <strong>ŞİMŞEK TESİSAT</strong>
+        <span>Abdurrahman Şimşek</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#yorumlar">Müşteri Yorumları</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <a href="tel:+905412587137" class="cta-call">
+      📞 Hemen Ara
+    </a>
+    <a href="https://wa.me/905412587137?text=Merhaba,%20tesisat%20hizmeti%20almak%20istiyorum." target="_blank" class="cta-whatsapp">
+      💬 WhatsApp
+    </a>
+    <a href="https://instagram.com/simsekyapivedekorasyon" target="_blank" class="cta-instagram" title="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="white" style="display:block;flex-shrink:0;">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      Instagram
+    </a>
+  </nav>
+</header>
+
+<!-- MARIO ANIMATION BANNER -->
+<div class="mario-banner">
+  <canvas id="marioCanvas"></canvas>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Şu An Müsait – Bugün Gelebiliriz
+      </div>
+      <h1>FETHİYE'NİN <span>GÜVENİLİR</span> TESİSATÇISI</h1>
+      <p>20 yıllık deneyim, hızlı müdahale, uygun fiyat. Su kaçağından kalorifer tamirine, tüm tesisat işleriniz için yanınızdayız. Fethiye ve çevre ilçelere hizmet veriyoruz.</p>
+      <div class="hero-buttons">
+        <a href="tel:+905412587137" class="btn-primary">📞 0541 258 71 37</a>
+        <a href="#hizmetler" class="btn-secondary">Hizmetleri Gör →</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">🔧 Uzman Olduğumuz Alanlar</div>
+      <ul class="service-list">
+        <li style="animation-delay:0s"><span>💧</span> Temiz Su & Pis Su Tesisatı</li>
+        <li style="animation-delay:-0.5s"><span>🔥</span> Kat Kaloriferi Montaj & Tamir</li>
+        <li style="animation-delay:-1s"><span>🚽</span> Gider Tıkanıklığı Açma</li>
+        <li style="animation-delay:-1.5s"><span>🔧</span> Musluk, Batarya & Klozet</li>
+        <li style="animation-delay:-2s"><span>☀️</span> Güneş Enerjisi & Şofben</li>
+        <li style="animation-delay:-2.5s"><span>🏠</span> Kombi Tamiri & Montajı</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Yıllık Deneyim</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" id="mutluMusteri">2.500+</div>
+      <div class="stat-label">Mutlu Müşteri</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">7/24</div>
+      <div class="stat-label">Acil Hizmet</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">%98</div>
+      <div class="stat-label">Memnuniyet Oranı</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="hizmetler">
+  <div class="section-header">
+    <span class="section-tag">Hizmetlerimiz</span>
+    <h2>TÜM TESİSAT İHTİYAÇLARINIZ İÇİN BURADAYIZ</h2>
+    <p>Fethiye ve çevresinde her türlü su tesisatı, ısıtma ve sıhhi tesisat hizmetleri</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="card-icon">💧</span>
+      <h3>Temiz Su Tesisatı</h3>
+      <p>Yeni bina tesisatı, boru döşeme, su kaçağı tespiti ve tamiri, basınç ayarı ve tüm temiz su hattı işleri.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">🚰</span>
+      <h3>Pis Su Tesisatı</h3>
+      <p>Atık su borusu döşeme, pis su hattı tamirleri, rögar bağlantısı ve drenaj sistemi kurulumu.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">🔥</span>
+      <h3>Kat Kaloriferi</h3>
+      <p>Kat kaloriferi kurulumu, petek montajı ve tamiri, boru değişimi, havalandırma ve sistem balansı.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">🚽</span>
+      <h3>Gider Tıkanıklığı Açma</h3>
+      <p>Lavabo, tuvalet, mutfak, banyo ve ana gider tıkanıklıklarını özel ekipmanlarla hızlıca açıyoruz.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">🔧</span>
+      <h3>Musluk, Batarya & Rezervuar</h3>
+      <p>Her marka musluk ve batarya tamiri/montajı, rezervuar, klozet ve sifon değişimi ve tamiri.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">☀️</span>
+      <h3>Güneş Enerjisi & Şofben</h3>
+      <p>Güneş enerjisi sistemi kurulumu ve bakımı, şofben montajı ve tamiri, sıcak su sistemi çözümleri.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+    <div class="service-card">
+      <span class="card-icon">🏠</span>
+      <h3>Kombi Tamiri & Montajı</h3>
+      <p>Her marka kombi kurulumu, periyodik bakım, arıza tespiti ve tamiri. Yıllık bakım anlaşması yapılır.</p>
+      <a href="tel:+905412587137" class="card-price">📞 Hemen Ara</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="hakkimizda">
+  <div class="why-grid">
+    <div class="why-text">
+      <span class="section-tag">Neden Biz?</span>
+      <h2>FETHİYE'DE 20 YILDIR GÜVEN VE KALİTE</h2>
+      <p>Saatlerce bekleme yok, söz verdiğimiz saatte geliriz.</p>
+      <ul class="feature-list">
+        <li>
+          <div class="check-icon">✓</div>
+          <span><strong>Söz Verilen Saatte</strong> — Randevuya dakikası dakikasına uymayı taahhüt ediyoruz</span>
+        </li>
+        <li>
+          <div class="check-icon">✓</div>
+          <span><strong>1 Yıl Garanti</strong> — Yaptığımız tüm işlere 1 yıl işçilik garantisi veriyoruz</span>
+        </li>
+        <li>
+          <div class="check-icon">✓</div>
+          <span><strong>7/24 Acil Servis</strong> — Gece yarısı, bayramda, hafta sonu — her zaman ulaşabilirsiniz</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="hero-card" style="padding:36px;">
+        <div style="text-align:center; margin-bottom:24px;">
+          <div style="font-size:80px;">👨‍🔧</div>
+          <h3 style="color:#0c4a6e; font-size:22px; font-family:'Bebas Neue'; letter-spacing:1px;">ABDURRAHMAN ŞİMŞEK</h3>
+          <p style="color:#0369a1; font-size:14px;">Usta Belgeli Su Tesisatçısı</p>
+        </div>
+        <a href="tel:+905412587137" style="display:block; background:#0891b2; color:white; text-align:center; padding:14px; border-radius:10px; margin-top:20px; text-decoration:none; font-weight:800; font-size:17px;">
+          📞 Şimdi Ara: 0541 258 71 37
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section testimonials" id="yorumlar">
+  <div class="section-header">
+    <span class="section-tag">Müşteri Yorumları</span>
+    <h2>ONLARCA MAHALLEDEN YÜZLERCE MUTLU MÜŞTERİ</h2>
+    <p id="avgRating" style="font-size:20px; font-weight:800; color:#0891b2;">⭐ Ortalama Puan: 4.8 / 5</p>
+  </div>
+
+  <!-- Kayan şerit -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>ACİL TESISAT ARIZA MI?</h2>
+  <p>Fethiye ve çevresine 20-45 dakika içinde ulaşıyoruz. Hemen arayın!</p>
+  <a href="tel:+905412587137" class="phone-big">📞 0541 258 71 37</a>
+  <p style="margin-top:16px; font-size:14px; opacity:0.7;">7/24 Açık — Bayramlarda da hizmetinizdeyiz</p>
+</section>
+
+<!-- SEO TEXT -->
+<div class="seo-section" id="iletisim">
+  <h2>Fethiye Su Tesisatçısı Hizmet Bölgeleri</h2>
+  <p>Fethiye merkez, Çalış, Çiftlik, Yanıklar, Göcek, Çalıca, Çamköy, Üzümlü, Esenköy, Kayaköy, Ovacık, Hisarönü, Ölüdeniz ve tüm Fethiye ilçesine hizmet vermekteyiz. Su tesisatı, kalorifer tamiri, tıkanıklık açma, kombi servisi konularında 20 yılı aşkın tecrübemizle yanınızdayız.</p>
+  <p>Fethiye'de güvenilir, uygun fiyatlı ve hızlı tesisat hizmeti arıyorsanız doğru adrestesiniz. Şimşek Tesisat olarak yaptığımız tüm işlere 1 yıl garanti vermekte, şeffaf fiyat politikamız ile müşterilerimize sürpriz fatura çıkarmamaktayız.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Şimşek Tesisat</h4>
+      <p>Fethiye'de 20 yıldır güvenilir su tesisatçısı hizmeti. Her türlü tesisat işiniz için 7/24 yanınızdayız.</p>
+      <p style="margin-top:12px; color: #94a3b8;">📍 Fethiye, Muğla</p>
+      <p style="color: #94a3b8;">📞 0541 258 71 37</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;">
+        <a href="https://wa.me/905412587137?text=Merhaba,%20tesisat%20hizmeti%20almak%20istiyorum." target="_blank"
+           style="background:#25d366; color:white; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:700; font-size:13px; display:flex; align-items:center; gap:6px;">
+          💬 WhatsApp
+        </a>
+        <a href="https://instagram.com/simsekyapivedekorasyon" target="_blank"
+           style="background:linear-gradient(135deg,#f09433,#dc2743,#bc1888); color:white; padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:700; font-size:13px; display:flex; align-items:center; gap:6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white">
+  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg> Instagram
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Hizmetlerimiz</h4>
+      <ul>
+        <li><a href="#">Temiz Su Tesisatı</a></li>
+        <li><a href="#">Pis Su Tesisatı</a></li>
+        <li><a href="#">Kat Kaloriferi</a></li>
+        <li><a href="#">Gider Tıkanıklığı Açma</a></li>
+        <li><a href="#">Musluk & Batarya & Klozet</a></li>
+        <li><a href="#">Güneş Enerjisi & Şofben</a></li>
+        <li><a href="#">Kombi Tamiri & Montajı</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hizmet Bölgeleri</h4>
+      <ul>
+        <li><a href="#">Fethiye Merkez</a></li>
+        <li><a href="#">Çalış</a></li>
+        <li><a href="#">Çiftlik</a></li>
+        <li><a href="#">Yanıklar</a></li>
+        <li><a href="#">Göcek</a></li>
+        <li><a href="#">Çalıca</a></li>
+        <li><a href="#">Çamköy</a></li>
+        <li><a href="#">Üzümlü</a></li>
+        <li><a href="#">Esenköy</a></li>
+        <li><a href="#">Kayaköy</a></li>
+        <li><a href="#">Ovacık</a></li>
+        <li><a href="#">Hisarönü</a></li>
+        <li><a href="#">Ölüdeniz</a></li>
+        <li><a href="#">ve çevre ilçeler</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Şimşek Tesisat — Fethiye Su Tesisatçısı | Tüm Hakları Saklıdır</p>
+  </div>
+</footer>
+
+<script>
+// ACCORDION - Hizmet kartı detay aç/kapat
+function toggleDetail(card) {
+  const isOpen = card.classList.contains('open');
+  // Tüm açık kartları kapat
+  document.querySelectorAll('.service-card.open').forEach(c => {
+    c.classList.remove('open');
+    c.querySelector('.card-toggle').textContent = '▼ Detayları Gör';
+  });
+  // Tıklanan kapalıysa aç
+  if (!isOpen) {
+    card.classList.add('open');
+    card.querySelector('.card-toggle').textContent = '▲ Kapat';
+  }
+}
+
+(function() {
+  const BASE = 2189;
+  const BASE_DATE = new Date('2026-03-11'); // Başlangıç tarihi
+
+  const today = new Date();
+  const todayKey = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+
+  function dailyRandom(seed) {
+    let x = Math.sin(seed * 9301 + 49297) * 233280;
+    return (x - Math.floor(x));
+  }
+
+  // Başlangıç tarihinden bu güne kadar kaç gün geçti
+  const msPerDay = 86400000;
+  const daysPassed = Math.floor((today - BASE_DATE) / msPerDay);
+
+  let total = BASE;
+  for (let d = 1; d <= daysPassed; d++) {
+    const seed = 20260311 + d;
+    const artis = Math.floor(dailyRandom(seed) * 5) + 1;
+    total += artis;
+  }
+
+  const el = document.getElementById('mutluMusteri');
+  if (el) {
+    el.textContent = total.toLocaleString('tr-TR') + '+';
+  }
+})();
+const canvas = document.getElementById('marioCanvas');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = 200;
+}
+resize();
+window.addEventListener('resize', () => { resize(); initPipes(); });
+
+const S = 3;
+const GROUND_Y = 150;
+const PIPE_H = 17;
+const PIPE_TOP_Y = GROUND_Y - (PIPE_H + 2) * S;
+const BREAK_ROW = 9;
+
+const C = {
+  skin:'#ffcba4', red:'#e8001c', brown:'#7c3f00', blue:'#2038ec',
+  white:'#ffffff', black:'#000000', yellow:'#f8d000', gray:'#b0b0b0',
+  dgray:'#505050', pipe:'#00a800', dpipe:'#005000', crack:'#2a0a00'
+};
+
+function drawSprite(sprite, wx, wy) {
+  for (let r = 0; r < sprite.length; r++)
+    for (let c = 0; c < sprite[r].length; c++) {
+      const col = sprite[r][c];
+      if (col) { ctx.fillStyle = col; ctx.fillRect(Math.round(wx+c*S), Math.round(wy+r*S), S, S); }
+    }
+}
+
+const marioWalk1 = [
+  [null,null,C.red,C.red,C.red,null,null,null],
+  [null,C.red,C.red,C.red,C.red,C.red,null,null],
+  [null,C.brown,C.skin,C.brown,C.black,C.skin,null,null],
+  [C.brown,C.skin,C.brown,C.brown,C.black,C.skin,C.skin,null],
+  [C.brown,C.skin,C.skin,C.brown,C.brown,C.skin,C.skin,null],
+  [null,C.brown,C.brown,C.brown,C.brown,null,null,null],
+  [null,null,C.blue,C.red,C.blue,null,null,null],
+  [null,C.blue,C.blue,C.red,C.blue,C.blue,null,null],
+  [C.blue,C.blue,C.blue,C.blue,C.blue,C.blue,null,null],
+  [C.blue,C.blue,null,null,C.blue,C.blue,null,null],
+  [C.brown,C.brown,null,null,C.brown,C.brown,null,null],
+  [C.brown,C.brown,null,null,C.brown,C.brown,null,null],
+];
+const marioWalk2 = [
+  [null,null,C.red,C.red,C.red,null,null,null],
+  [null,C.red,C.red,C.red,C.red,C.red,null,null],
+  [null,C.brown,C.skin,C.brown,C.black,C.skin,null,null],
+  [C.brown,C.skin,C.brown,C.brown,C.black,C.skin,C.skin,null],
+  [C.brown,C.skin,C.skin,C.brown,C.brown,C.skin,C.skin,null],
+  [null,C.brown,C.brown,C.brown,C.brown,null,null,null],
+  [null,C.blue,C.blue,C.red,C.blue,C.blue,null,null],
+  [C.blue,C.blue,C.blue,C.red,C.blue,C.blue,C.blue,null],
+  [C.blue,C.blue,C.blue,C.blue,C.blue,null,null,null],
+  [null,C.blue,C.blue,null,null,C.blue,null,null],
+  [C.brown,C.brown,null,null,null,C.brown,C.brown,null],
+  [C.brown,null,null,null,null,null,C.brown,C.brown],
+];
+const marioFix = [
+  [null,null,C.red,C.red,C.red,null,null,null,null,null],
+  [null,C.red,C.red,C.red,C.red,C.red,null,null,null,null],
+  [null,C.brown,C.skin,C.brown,C.black,C.skin,null,C.gray,null,null],
+  [C.brown,C.skin,C.brown,C.brown,C.black,C.skin,C.skin,C.gray,C.dgray,null],
+  [C.brown,C.skin,C.skin,C.brown,C.brown,C.skin,C.skin,C.gray,C.dgray,C.dgray],
+  [null,C.brown,C.brown,C.brown,C.brown,null,null,C.dgray,null,null],
+  [null,null,C.blue,C.red,C.blue,null,null,null,null,null],
+  [null,C.blue,C.blue,C.red,C.blue,C.blue,null,null,null,null],
+  [C.blue,C.blue,C.blue,C.blue,C.blue,C.blue,null,null,null,null],
+  [null,C.blue,null,null,null,C.blue,null,null,null,null],
+  [C.brown,C.brown,null,null,C.brown,C.brown,null,null,null,null],
+  [C.brown,C.brown,null,null,C.brown,C.brown,null,null,null,null],
+];
+
+// Mario sitting (in car) - same as walk1 but no legs
+const marioSit = [
+  [null,null,C.red,C.red,C.red,null,null,null],
+  [null,C.red,C.red,C.red,C.red,C.red,null,null],
+  [null,C.brown,C.skin,C.brown,C.black,C.skin,null,null],
+  [C.brown,C.skin,C.brown,C.brown,C.black,C.skin,C.skin,null],
+  [C.brown,C.skin,C.skin,C.brown,C.brown,C.skin,C.skin,null],
+  [null,C.brown,C.brown,C.brown,C.brown,null,null,null],
+  [null,null,C.blue,C.red,C.blue,null,null,null],
+  [null,C.blue,C.blue,C.blue,C.blue,C.blue,null,null],
+];
+
+function drawPipe(pxPos, fixed) {
+  const wx = pxPos, wy = PIPE_TOP_Y;
+  ctx.fillStyle = fixed ? '#006600' : C.dpipe;
+  ctx.fillRect(wx, wy, S*7, S*2);
+  ctx.fillStyle = fixed ? '#00aa00' : C.pipe;
+  ctx.fillRect(wx+S, wy, S*5, S*2);
+  for (let row = 0; row < PIPE_H; row++) {
+    const rowY = wy + (2+row)*S;
+    const isCrack = !fixed && (row===BREAK_ROW || row===BREAK_ROW+1);
+    if (isCrack) {
+      ctx.fillStyle = C.dpipe; ctx.fillRect(wx+S, rowY, S*2, S);
+      ctx.fillStyle = C.dpipe; ctx.fillRect(wx+S*5, rowY, S, S);
+      ctx.fillStyle = C.crack; ctx.fillRect(wx+S*3, rowY, S*2, S);
+    } else {
+      ctx.fillStyle = fixed ? '#005500' : C.dpipe; ctx.fillRect(wx+S, rowY, S*2, S);
+      ctx.fillStyle = fixed ? '#009900' : C.pipe;  ctx.fillRect(wx+S*3, rowY, S*2, S);
+      ctx.fillStyle = fixed ? '#005500' : C.dpipe; ctx.fillRect(wx+S*5, rowY, S, S);
+    }
+  }
+  if (fixed) {
+    const patchY = wy+(2+BREAK_ROW)*S;
+    ctx.fillStyle = '#004400'; ctx.fillRect(wx+S, patchY, S*5, S*2);
+    ctx.fillStyle = '#ffcc00'; ctx.fillRect(wx+S, patchY, S*5, S/2);
+    ctx.fillStyle = C.yellow; ctx.font = `bold ${S*5}px monospace`;
+    ctx.fillText('✓', wx+S, wy-S*4);
+  }
+}
+
+// Mitsubishi car - pixel art, white
+function drawCar(wx, wy, marioInside) {
+  // Car shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.15)';
+  ctx.fillRect(wx+S*3, wy+S*10, S*22, S*2);
+
+  // Wheels first (behind body)
+  [S*5, S*19].forEach(ox => {
+    ctx.fillStyle = '#111';
+    ctx.beginPath(); ctx.arc(wx+ox, wy+S*10, S*2.8, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#666';
+    ctx.beginPath(); ctx.arc(wx+ox, wy+S*10, S*1.4, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#999';
+    ctx.beginPath(); ctx.arc(wx+ox, wy+S*10, S*0.6, 0, Math.PI*2); ctx.fill();
+  });
+
+  // Car body
+  const W2 = '#f0f0f0', W3 = '#e0e0e0', W4 = '#d0d0d0';
+  const GL = '#90c8ff', GD = '#5090d0'; // glass
+  // Roof
+  ctx.fillStyle = W2;
+  ctx.fillRect(wx+S*6, wy,       S*13, S);
+  ctx.fillRect(wx+S*5, wy+S,     S*15, S);
+  ctx.fillRect(wx+S*4, wy+S*2,   S*16, S);
+  // Windshield (front right)
+  ctx.fillStyle = GD; ctx.fillRect(wx+S*17, wy+S,   S*3, S);
+  ctx.fillStyle = GL; ctx.fillRect(wx+S*17, wy+S*2, S*3, S*2);
+  // Rear window (left)
+  ctx.fillStyle = GD; ctx.fillRect(wx+S*5,  wy+S,   S*3, S);
+  ctx.fillStyle = GL; ctx.fillRect(wx+S*5,  wy+S*2, S*3, S*2);
+  // Middle window
+  ctx.fillStyle = GL; ctx.fillRect(wx+S*9,  wy+S*2, S*7, S*2);
+  ctx.fillStyle = GD; ctx.fillRect(wx+S*9,  wy+S,   S*7, S);
+
+  // Main body
+  ctx.fillStyle = W2; ctx.fillRect(wx+S*2,  wy+S*4, S*22, S*4);
+  ctx.fillStyle = W3; ctx.fillRect(wx+S*2,  wy+S*4, S*22, S);
+  ctx.fillStyle = W4; ctx.fillRect(wx+S*2,  wy+S*7, S*22, S);
+  // Bumpers
+  ctx.fillStyle = W3; ctx.fillRect(wx,      wy+S*4, S*3, S*3);
+  ctx.fillStyle = W4; ctx.fillRect(wx+S*21, wy+S*4, S*3, S*3);
+
+  // Door line
+  ctx.fillStyle = '#cccccc';
+  ctx.fillRect(wx+S*8, wy+S*4, S, S*4);
+  ctx.fillRect(wx+S*16, wy+S*4, S, S*4);
+
+  // Headlight
+  ctx.fillStyle = '#ffffaa'; ctx.fillRect(wx+S*22, wy+S*5, S*2, S*2);
+  ctx.fillStyle = '#ffffff'; ctx.fillRect(wx+S*23, wy+S*5, S, S);
+  // Taillight
+  ctx.fillStyle = '#ff2222'; ctx.fillRect(wx+S, wy+S*5, S*2, S*2);
+  ctx.fillStyle = '#ff6666'; ctx.fillRect(wx+S, wy+S*5, S, S);
+
+  // Mitsubishi 3-diamond logo on hood
+  ctx.fillStyle = '#cc0000';
+  ctx.fillRect(wx+S*21, wy+S*6, S*2, S);
+  ctx.fillRect(wx+S*22, wy+S*5, S, S);
+  ctx.fillRect(wx+S*22, wy+S*7, S, S);
+
+  // Mario sitting in driver seat — inside windshield area
+  if (marioInside) {
+    // Clip to window area so Mario looks seated inside
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(wx+S*9, wy, S*11, S*4);
+    ctx.clip();
+    drawSprite(marioSit, wx+S*11, wy-S*1);
+    ctx.restore();
+  }
+
+  // Speed lines
+  ctx.globalAlpha = 0.3;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(wx-S*12, wy+S*4, S*10, S);
+  ctx.fillRect(wx-S*16, wy+S*6, S*13, S);
+  ctx.fillRect(wx-S*10, wy+S*5, S*7,  S);
+  ctx.globalAlpha = 1;
+}
+
+function drawGround(y) {
+  const W = canvas.width;
+  for (let x = 0; x < W; x += S) {
+    ctx.fillStyle = '#c87800'; ctx.fillRect(x, y, S, S);
+    ctx.fillStyle = '#b85000'; ctx.fillRect(x, y+S, S, S*5);
+  }
+  ctx.fillStyle = '#a04000';
+  for (let x = 0; x < W; x += S*8) ctx.fillRect(x, y, S, S*6);
+}
+
+function drawCloud(wx, wy) {
+  const cl = [
+    [null,null,C.white,C.white,C.white,null,null],
+    [null,C.white,C.white,C.white,C.white,C.white,null],
+    [C.white,C.white,C.white,C.white,C.white,C.white,C.white],
+    [C.white,C.white,C.white,C.white,C.white,C.white,C.white],
+    [null,C.white,C.white,C.white,C.white,C.white,null],
+  ];
+  drawSprite(cl, wx, wy);
+}
+
+function drawCoin(wx, wy, f) {
+  const w = f<2?3:(f<3?2:1);
+  ctx.fillStyle = C.yellow; ctx.fillRect(wx, wy, w*S, 4*S);
+  ctx.fillStyle = '#c8a000'; ctx.fillRect(wx+S, wy+S, Math.max(0,w-1)*S, 2*S);
+}
+
+function spawnJetWater(pipeX) {
+  const crackY = PIPE_TOP_Y + (2+BREAK_ROW)*S;
+  const cx = pipeX + S*3;
+  for (let i = 0; i < 2; i++) {
+    waterDrops.push({ x:cx, y:crackY+Math.random()*S*2, vx:-(2.5+Math.random()*3), vy:(Math.random()-.5)*2, life:22+Math.random()*14, big:Math.random()>.5 });
+    waterDrops.push({ x:cx+S*2, y:crackY+Math.random()*S*2, vx:(2.5+Math.random()*3), vy:(Math.random()-.5)*2, life:22+Math.random()*14, big:Math.random()>.5 });
+  }
+}
+
+// ---- STATE ----
+let marioX=-60, frame=0, walkFrame=0;
+let carX=-400, marioInCar=false;
+let waterDrops=[], coins=[];
+let cloudX1=50, cloudX2=230, cloudX3=410;
+let coinAnim=0, pipes=[];
+// states: walk | fix | carcoming | driving | reset
+let state='walk', fixTimer=0, currentPipe=0, celebTimer=0;
+
+function initPipes() {
+  const W = canvas.width;
+  pipes = [
+    { x:Math.round(W*0.22), fixed:false },
+    { x:Math.round(W*0.50), fixed:false },
+    { x:Math.round(W*0.76), fixed:false },
+  ];
+}
+
+function resetGame() {
+  marioX=-60; carX=-400; marioInCar=false;
+  state='walk'; fixTimer=0; currentPipe=0; celebTimer=0;
+  waterDrops=[]; coins=[];
+  pipes.forEach(p=>p.fixed=false);
+}
+
+function update() {
+  frame++;
+  walkFrame = Math.floor(frame/8)%2;
+  const W = canvas.width;
+  cloudX1-=0.3; cloudX2-=0.2; cloudX3-=0.25;
+  if(cloudX1<-90) cloudX1=W+30;
+  if(cloudX2<-90) cloudX2=W+60;
+  if(cloudX3<-90) cloudX3=W+90;
+  if(!pipes.length) initPipes();
+
+  // Water from broken pipes
+  if(frame%4===0) pipes.forEach(p=>{ if(!p.fixed) spawnJetWater(p.x); });
+
+  if(state==='walk') {
+    marioX += 2;
+    if(marioX >= pipes[currentPipe].x - S*14) { state='fix'; fixTimer=0; }
+
+  } else if(state==='fix') {
+    fixTimer++;
+    if(fixTimer===100) {
+      pipes[currentPipe].fixed=true;
+      coins.push({ x:pipes[currentPipe].x+S*2, y:PIPE_TOP_Y-S*6, vy:-5.5, life:70 });
+    }
+    if(fixTimer>125) {
+      currentPipe++;
+      if(currentPipe>=pipes.length) { state='carcoming'; celebTimer=0; }
+      else state='walk';
+    }
+
+  } else if(state==='carcoming') {
+    celebTimer++;
+    carX += 4;
+    // Car stops so its door aligns next to Mario (car is ~24S wide, door at S*13)
+    const stopX = marioX - S*13;
+    if(carX >= stopX) {
+      carX = stopX;
+      state = 'boarding';
+      celebTimer = 0;
+    }
+
+  } else if(state==='boarding') {
+    celebTimer++;
+    // Mario walks toward the car door
+    const doorX = carX + S*13;
+    if(marioX < doorX) {
+      marioX += 2.5;
+    } else {
+      // Mario reached the door — instantly hide him and put him in car
+      marioInCar = true;
+      marioX = doorX; // freeze position
+    }
+    if(marioInCar && celebTimer > 20) state = 'driving';
+
+  } else if(state==='driving') {
+    celebTimer++;
+    carX += 4;
+    marioX = carX + S*14; // Mario stays in car
+    if(carX > W+150) resetGame();
+  }
+
+  waterDrops = waterDrops.filter(d=>d.life>0);
+  waterDrops.forEach(d=>{ d.x+=d.vx; d.y+=d.vy; d.vy+=0.2; d.life--; if(d.y>GROUND_Y+S*2) d.life=0; });
+  coins.forEach(c=>{ c.y+=c.vy; c.vy+=0.4; c.life--; });
+  coins = coins.filter(c=>c.life>0);
+}
+
+function draw() {
+  const W=canvas.width, H=canvas.height;
+  const sky=ctx.createLinearGradient(0,0,0,GROUND_Y);
+  sky.addColorStop(0,'#3a88ee'); sky.addColorStop(1,'#6eb8ff');
+  ctx.fillStyle=sky; ctx.fillRect(0,0,W,H);
+
+  drawCloud(cloudX1,12); drawCloud(cloudX2,22); drawCloud(cloudX3,8);
+  drawGround(GROUND_Y);
+
+  // Water
+  waterDrops.forEach(d=>{
+    ctx.globalAlpha=Math.min(1,d.life/15);
+    ctx.fillStyle=d.vx<0?'#30aaff':'#88ddff';
+    ctx.fillRect(d.x,d.y,(d.big?S*1.5:S),(d.big?S*1.5:S));
+  });
+  ctx.globalAlpha=1;
+
+  pipes.forEach(p=>drawPipe(p.x,p.fixed));
+
+  // Car (draw before Mario so Mario appears on top when walking)
+  if(state==='carcoming'||state==='boarding'||state==='driving') {
+    drawCar(carX, GROUND_Y-S*12, marioInCar);
+  }
+
+  // Mario (only show if not in car)
+  if(!marioInCar) {
+    const marioY = GROUND_Y - marioWalk1.length*S;
+    if(state==='fix' && fixTimer<108) drawSprite(marioFix, marioX, marioY);
+    else if(walkFrame===0) drawSprite(marioWalk1, marioX, marioY);
+    else drawSprite(marioWalk2, marioX, marioY);
+  }
+
+  coinAnim=Math.floor(frame/4)%4;
+  coins.forEach(c=>drawCoin(c.x,c.y,coinAnim));
+
+  // Score popup
+  if(state==='fix' && fixTimer>100 && fixTimer<128 && currentPipe<pipes.length) {
+    ctx.fillStyle=C.yellow; ctx.font=`bold ${S*5}px monospace`;
+    ctx.fillText('200', pipes[currentPipe].x, PIPE_TOP_Y-S*3);
+  }
+
+  // "TÜM BORULAR TAMİRDİ" + ŞİMŞEK TESİSAT flashing banner
+  const showBanner = (state==='carcoming'||state==='boarding'||state==='driving');
+  if(showBanner) {
+    // Background panel
+    const blink = Math.floor(frame/8)%2===0;
+    ctx.fillStyle='rgba(0,0,0,0.55)';
+    ctx.fillRect(0, 42, W, 52);
+
+    // Top line: all pipes fixed
+    ctx.fillStyle = C.yellow;
+    ctx.font = `bold ${S*4}px monospace`;
+    ctx.textAlign='center';
+    ctx.fillText('✅ TÜM BORULAR BAŞARIYLA TAMİR EDİLDİ!', W/2, 65);
+
+    // Bottom line: company name - FLASHING like Game Over
+    if(blink) {
+      ctx.fillStyle='#ff4444';
+      ctx.font=`bold ${S*5}px monospace`;
+    } else {
+      ctx.fillStyle='#ffffff';
+      ctx.font=`bold ${S*5}px monospace`;
+    }
+    ctx.fillText('⚡ ŞİMŞEK TESİSAT ⚡', W/2, 88);
+    ctx.textAlign='left';
+  }
+
+  // Title
+  ctx.fillStyle='rgba(0,0,0,0.3)'; ctx.font=`bold ${S*3}px monospace`;
+  ctx.fillText('★  ŞİMŞEK TESİSAT - FETHİYE  ★', 12, 18);
+  ctx.fillStyle=C.yellow; ctx.font=`bold ${S*3}px monospace`;
+  ctx.fillText('★  ŞİMŞEK TESİSAT - FETHİYE  ★', 11, 17);
+}
+
+function loop() { update(); draw(); requestAnimationFrame(loop); }
+setTimeout(()=>{ initPipes(); loop(); }, 120);
+
+// KAYAN YORUM ŞERİDİ
+(function buildTicker() {
+  const isimler = [
+    "Ahmet Y.","Ayşe K.","Mehmet D.","Fatma Ç.","Mustafa B.",
+    "Emine S.","Ali R.","Hatice G.","İbrahim T.","Zeynep A.",
+    "Hüseyin K.","Merve Ö.","Yusuf E.","Elif N.","Hasan M.",
+    "Selma P.","Murat L.","Gül H.","Osman F.","Nur C.",
+    "Kemal V.","Sema Z.","Emre U.","Leyla I.","Burak Ş.",
+    "Dilek R.","Serkan T.","Pınar Y.","Tolga A.","Reyhan B.",
+    "Cem D.","Filiz Ç.","Baran K.","Selin M.","Erhan G.",
+    "Nesrin E.","Taner S.","Gülen O.","Volkan P.","Ayla H.",
+    "Kadir F.","Şule N.","Sinan L.","Derya Z.","Fuat U.",
+    "Nazan I.","Barış V.","Özlem C.","Caner Ş.","Gizem R.",
+    "Ramazan T.","Sevim Y.","Orhan A.","Damla K.","Ferhat M.",
+    "Yıldız G.","Ufuk E.","Songül S.","Atilla O.","Kezban P.",
+    "Erdal H.","Tuğba F.","Sedat N.","Burcu L.","Gökhan Z.",
+    "Havva U.","Ömer I.","Sibel V.","Arda C.","Perihan Ş.",
+    "Cemal R.","Almila T.","Şahin Y.","Rukiye A.","Zeki K.",
+    "Feride M.","Lokman G.","Tülay E.","Bekir S.","Hacer O.",
+    "Samet P.","Gülay H.","Cavit F.","Sevinç N.","Halil L.",
+    "Nurcan Z.","Fırat U.","Aysel I.","Tarık V.","Eser C.",
+    "Vildan Ş.","Gürsel R.","Pembe T.","Koray Y.","Raziye A.",
+    "Tevfik K.","Şükran M.","Suat G.","Sevgi E.","Nuri S.",
+    "Zehra O.","Harun P.","Saniye H.","Cenk F.","Yasemin N."
+  ];
+
+  // Ortalama 4.8 olacak şekilde 100 puan: 5'ler çok, 4'ler az, nadiren 3
+  const puanHavuzu = [];
+  for (let i = 0; i < 80; i++) puanHavuzu.push(5);
+  for (let i = 0; i < 16; i++) puanHavuzu.push(4);
+  for (let i = 0; i < 4; i++)  puanHavuzu.push(3);
+  // karıştır
+  for (let i = puanHavuzu.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [puanHavuzu[i], puanHavuzu[j]] = [puanHavuzu[j], puanHavuzu[i]];
+  }
+
+  const kullanicilar = isimler.slice(0, 100).map((isim, i) => ({
+    isim,
+    puan: puanHavuzu[i]
+  }));
+
+  function yildiz(n) {
+    return '★'.repeat(n) + '☆'.repeat(5 - n);
+  }
+
+  function initials(isim) {
+    return isim.split(' ').map(p => p[0]).join('').toUpperCase();
+  }
+
+  const track = document.getElementById('tickerTrack');
+  if (!track) return;
+
+  // İki kopya — sonsuz döngü için
+  [kullanicilar, kullanicilar].forEach(liste => {
+    liste.forEach(k => {
+      const item = document.createElement('div');
+      item.className = 'ticker-item';
+      item.innerHTML = `
+        <div class="ticker-avatar">${initials(k.isim)}</div>
+        <div class="ticker-name">${k.isim}</div>
+        <div class="ticker-stars">${yildiz(k.puan)}</div>
+      `;
+      track.appendChild(item);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
